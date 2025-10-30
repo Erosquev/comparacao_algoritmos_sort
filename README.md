@@ -2,12 +2,9 @@
 
 Este documento apresenta a análise de desempenho de diferentes algoritmos de ordenação implementados em Java, considerando número de comparações e movimentações (trocas) realizadas sobre os seguintes três vetores de teste:
 
-
 vetor1= {12, 18, 9, 25, 17, 31, 22, 27, 16, 13, 19, 23, 20, 30, 14, 11, 15, 24, 26, 28};
 vetor2 = {5, 7, 9, 10, 12, 14, 15, 17, 19, 21, 22, 23, 24, 25, 27, 28, 29, 30, 31, 32};
 vetor3 = {99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6}.
-
-
 
 ## Algoritmos Avaliados
 
@@ -24,7 +21,6 @@ vetor3 = {99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 11, 10, 9, 8, 
 - **Comparações:** quantidade de verificações entre elementos.
 - **Trocas:** número de movimentações realizadas entre elementos.
 
----
 
 ## Resultados — Vetor 1 (desordenado)
 
@@ -42,7 +38,7 @@ vetor3 = {99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 11, 10, 9, 8, 
 - **Menor número de trocas:** Bucket Sort (60 trocas).  
 - **Melhor desempenho geral:** Bucket Sort, pois movimentou menos elementos.  
 
----
+
 
 ## Resultados — Vetor 2 (já ordenado)
 
@@ -59,7 +55,7 @@ vetor3 = {99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 11, 10, 9, 8, 
 - Todos os algoritmos executaram 0 comparações e 0 trocas, pois o vetor já estava ordenado .  
 - **Conclusão:** todos os algoritmos apresentaram o mesmo desempenho.  
 
----
+
 
 ## Resultados — Vetor 3 (parcialmente ordenado)
 
@@ -77,7 +73,6 @@ vetor3 = {99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 11, 10, 9, 8, 
 - **Menor número de trocas:** Bucket Sort (0).  
 - **Melhor desempenho geral:** Bucket Sort.  
 
----
 
 ## Conclusão Geral
 
@@ -87,7 +82,6 @@ vetor3 = {99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 11, 10, 9, 8, 
 | Vetor 2 (já ordenado) | Todos | Nenhum algoritmo precisou realizar operações. |
 | Vetor 3 (parcialmente ordenado) | Bucket Sort | Foi o único a não precisar de comparações ou trocas. |
 
----
 
 ## Considerações Finais
 
